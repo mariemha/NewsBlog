@@ -34,4 +34,7 @@ include ArticlesHelper
 
        redirect_to article_path(@article)
     end
+    def tag_list
+  tags.join(", ")
+end
 end
